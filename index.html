@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avirup Roy | Assignment 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container flex-wrap">
+        <a class="navbar-brand" href="#">Avirup Roy</a>
+        <ul class="navbar-nav flex-row gap-3">
+            <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="#form">Update</a></li>
+            <li class="nav-item"><a class="nav-link" href="#list">List</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    
+    <section id="profile" class="section">
+        <h2>User Profile</h2>
+        <p>Name: <span id="display-name">Avirup Roy</span></p>
+        <p>Birth Year: <span id="display-year">2004</span></p>
+        <p>Age: <span id="display-age">0</span> years</p>
+        <p>Months Old: <span id="display-months">0</span> months</p>
+        <p>Hobbies Count: <span id="display-hobby-count">0</span></p>
+        <p>Is Developer: <span id="display-dev">true</span></p>
+    </section>
+
+
+    <section id="form" class="section">
+        <h2>Update Profile</h2>
+        <form id="profile-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" required placeholder="New name">
+
+            <label for="birthyear">Birth Year</label>
+            <input type="number" id="birthyear" required placeholder="e.g. 2004">
+
+            <button type="submit">Create / Update Profile</button>
+        </form>
+    </section>
+
+
+    <section id="list" class="section">
+        <h2>My Hobbies List</h2>
+        
+        <ul id="hobby-list">
+            <li>Gym</li>
+            <li>Reading</li>
+        </ul>
+
+        <div class="list-controls">
+            <input type="text" id="new-hobby" placeholder="Enter a new hobby">
+            <button id="add-btn">Add Item</button>
+            <button id="remove-btn" class="btn-danger">Remove Item</button>
+        </div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
